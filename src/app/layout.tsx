@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Lato, Oooh_Baby, Rethink_Sans } from 'next/font/google'
+import { Rethink_Sans, Shadows_Into_Light } from 'next/font/google'
 
-const ooohbaby = Oooh_Baby({
+const shadowsintolight = Shadows_Into_Light({
   subsets: ['latin'],
   weight: ['400', '400'],
-  variable: '--font-ooohbaby',
+  variable: '--font-shadowsintolight',
 })
 
 const rethink = Rethink_Sans({
@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${ooohbaby.variable} ${rethink.variable} h-full antialiased`}
+      className={`${shadowsintolight.variable} ${rethink.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col px-8 py-8">{children}</body>
     </html>

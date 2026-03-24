@@ -16,7 +16,7 @@ export default async function Home() {
   return (
    <div className="space-y-8 flex flex-col items-center">
     <div className="flex flex-col items-center gap-2">
-      <h1 className="font-bold text-3xl font-display">Golf Links Fish Bar</h1>
+      <h1 className="font-bold text-3xl uppercase font-display">Golf Links Fish Bar</h1>
       <h2 className="font-body text-sm">07 4732 0555</h2>
       <h3 className="font-body text-sm">112 Golf Links Dr, Kirwan QLD 4817</h3>
       <div className="flex flex-col items-center">
