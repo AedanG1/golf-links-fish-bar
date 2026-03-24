@@ -1,4 +1,4 @@
-// components/OpenStatus.tsx
+'use client'
 
 const hours: Record<number, { open: string; close: string } | null> = {
   0: { open: '16:30', close: '19:30' }, // Sunday
