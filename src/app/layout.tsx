@@ -1,16 +1,18 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Lato, Oooh_Baby, Rethink_Sans } from 'next/font/google'
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+const ooohbaby = Oooh_Baby({
+  subsets: ['latin'],
+  weight: ['400', '400'],
+  variable: '--font-ooohbaby',
+})
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const rethink = Rethink_Sans({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-rethink',
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,9 +27,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${ooohbaby.variable} ${rethink.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col px-8 py-8">{children}</body>
     </html>
   );
 }
